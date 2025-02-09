@@ -19,7 +19,6 @@ def lets_play():
     time.sleep(3)
 
     while True:
-
         computer_hand = random.choice(choices)
         my_hand = input("rock, paper, or scissors? ").strip().lower()
         
@@ -51,8 +50,6 @@ def lets_play():
                 time.sleep(2)
 
                 play_again()
-                    
-
         else:
             computer_score = computer_score + 1
             print("=======================================")
@@ -69,8 +66,6 @@ def lets_play():
 
                 play_again()
 
-                
-        
         print(f"Computer score: {computer_score}")
         print(f"My score: {my_score}")
 
