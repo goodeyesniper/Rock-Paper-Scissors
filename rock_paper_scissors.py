@@ -21,7 +21,6 @@ def lets_play():
     while True:
 
         computer_hand = random.choice(choices)
-        
         my_hand = input("rock, paper, or scissors? ").strip().lower()
         
         if my_hand == "quit":
