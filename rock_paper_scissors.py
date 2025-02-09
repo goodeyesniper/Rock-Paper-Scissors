@@ -21,7 +21,7 @@ def lets_play():
     while True:
 
         computer_hand = random.choice(choices)
-        print(f"Computer chose: {computer_hand}")
+        
         my_hand = input("rock, paper, or scissors? ").strip().lower()
         
         if my_hand == "quit":
@@ -30,6 +30,8 @@ def lets_play():
             print("Invalid choice. Please enter rock, paper, or scissors.")
             continue
 
+        print(f"Computer chose: {computer_hand}")
+        
         if my_hand == computer_hand:
             print("=======================================")
             print("\n           It's a draw!\n")
